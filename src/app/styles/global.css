@@ -1,0 +1,18 @@
+@theme {
+	--font-montserrat: Montserrat;
+
+	--color-primary-text: #0a1b49;
+	--color-secondary-text: white;
+	--color-third-text: #a3a3a3;
+
+	--color-primary: #289ad9;
+	--color-primary-accent: #67c8ff;
+	--color-secondary: #e6f6ff;
+
+	--color-primary-bg: white;
+	--color-secondary-bg: #f5f5f5;
+
+	--color-active-badge: #b9ffcc;
+	--color-passive-badge: #e7d7ff;
+	--color-o-badge: #ffdede;
+}
