@@ -13,9 +13,7 @@ export const MainSidebar: FC<Props> = ({ className, ...props }) => {
 				<h2 className='font-medium'>ГГКИТ</h2>
 			</Link>
 
-			<nav className=''>
-				<Link to={ROUTES.HOME}></Link>
-			</nav>
+			<nav className=''></nav>
 		</aside>
 	)
 }

@@ -22,7 +22,7 @@ export const LinkItem: FC<Props> = ({
 		<Link
 			to={ROUTES.HOME}
 			className={cn(
-				'[&_svg]:h-auto flex gap-2 px-5 py-4',
+				'[&_svg]:h-auto flex gap-2 px-5 py-4 border-b border-b',
 				{
 					['[&_svg]:w-10']: size === 'big',
 					['[&_svg]:w-6']: size === 'small',
