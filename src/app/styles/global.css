@@ -1,4 +1,4 @@
-@theme {
+@theme inline {
 	--font-montserrat: Montserrat;
 
 	--color-primary-text: #0a1b49;
@@ -14,5 +14,5 @@
 
 	--color-active-badge: #b9ffcc;
 	--color-passive-badge: #e7d7ff;
-	--color-o-badge: #ffdede;
+	--color-intermediate-badge: #ffdede;
 }
