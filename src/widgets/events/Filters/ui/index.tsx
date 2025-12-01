@@ -1,4 +1,7 @@
-import { EnEventsStatusesEntity } from '@/shared/types/entities'
+import {
+	EnEventsSortTypesEntity,
+	EnEventsStatusesEntity,
+} from '@/shared/types/entities'
 import { Input } from '@/shared/ui-kit/input'
 import { Label } from '@/shared/ui-kit/label'
 import {
@@ -58,14 +61,11 @@ export const Filters: FC<Props> = ({ className, ...props }) => {
 						<SelectValue placeholder='Не выбрано' />
 					</SelectTrigger>
 					<SelectContent>
-						<SelectItem value={EnEventsStatusesEntity.RECRUITING}>
-							Идет набор
+						<SelectItem value={EnEventsSortTypesEntity.DATE_PUBLISH_ASC}>
+							По возрастанию по дате публикации
 						</SelectItem>
-						<SelectItem value={EnEventsStatusesEntity.STARTED}>
-							Начавшиеся
-						</SelectItem>
-						<SelectItem value={EnEventsStatusesEntity.FINISHED}>
-							Завершенные
+						<SelectItem value={EnEventsSortTypesEntity.DATE_PUBLISH_ASC}>
+							По убыванию по дате публикации
 						</SelectItem>
 					</SelectContent>
 				</Select>
