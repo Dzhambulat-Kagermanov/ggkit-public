@@ -78,4 +78,9 @@
 	.scroll-hidden::-webkit-scrollbar {
 		display: none;
 	}
+
+	.paddings-x-sections {
+		padding-right: 4rem;
+		padding-left: 4rem;
+	}
 }

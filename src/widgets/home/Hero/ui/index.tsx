@@ -9,7 +9,7 @@ export const Hero: FC<Props> = ({ className, ...props }) => {
 		<section
 			{...props}
 			className={cn(
-				'px-15 w-full h-[545px] flex flex-col justify-center overflow-hidden relative z-0',
+				'paddings-x-sections w-full h-[545px] flex flex-col justify-center overflow-hidden relative z-0',
 				className
 			)}
 		>
