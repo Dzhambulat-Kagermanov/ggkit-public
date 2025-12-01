@@ -7,7 +7,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const MainSidebarLayout: FC<Props> = ({ className, ...props }) => {
 	return (
-		<div {...props} className={cn('flex', className)}>
+		<div {...props} className={cn('flex h-screen', className)}>
 			<MainSidebar />
 			<Outlet />
 		</div>

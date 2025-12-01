@@ -3,22 +3,23 @@ import { EnQuizStatusesEntity } from '@/shared/types/entities'
 import { cn } from '@/shared/utils/cn'
 import { type FC, type HTMLAttributes } from 'react'
 
-interface Props extends HTMLAttributes<HTMLUListElement> {}
+interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const List: FC<Props> = ({ className, ...props }) => {
 	return (
-		<ul
+		<div
 			{...props}
 			className={cn(
-				'grid grid-cols-3 gap-12 auto-rows-max paddings-x-sections',
+				'grid grid-cols-2 gap-12 auto-rows-max paddings-x-sections grow',
 				className
 			)}
 		>
 			<QuizCard
 				data={{
 					createdAt: new Date().toString(),
-					description: 'Test',
-					name: 'Test',
+					description:
+						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
+					name: 'Какое блюдо добавить в меню в столовой?',
 					status: EnQuizStatusesEntity.ACTIVE,
 					totalVotes: 20,
 					uuid: 'fewqfqew',
@@ -46,8 +47,9 @@ export const List: FC<Props> = ({ className, ...props }) => {
 			<QuizCard
 				data={{
 					createdAt: new Date().toString(),
-					description: 'Test',
-					name: 'Test',
+					description:
+						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
+					name: 'Какую блюдо добавить в меню в столовой?',
 					status: EnQuizStatusesEntity.ACTIVE,
 					totalVotes: 20,
 					uuid: 'fewqfqew',
@@ -74,8 +76,9 @@ export const List: FC<Props> = ({ className, ...props }) => {
 			<QuizCard
 				data={{
 					createdAt: new Date().toString(),
-					description: 'Test',
-					name: 'Test',
+					description:
+						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
+					name: 'Какую блюдо добавить в меню в столовой?',
 					status: EnQuizStatusesEntity.ACTIVE,
 					totalVotes: 20,
 					uuid: 'fewqfqew',
@@ -101,8 +104,9 @@ export const List: FC<Props> = ({ className, ...props }) => {
 			<QuizCard
 				data={{
 					createdAt: new Date().toString(),
-					description: 'Test',
-					name: 'Test',
+					description:
+						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
+					name: 'Какую блюдо добавить в меню в столовой?',
 					status: EnQuizStatusesEntity.FINISHED,
 					totalVotes: 20,
 					uuid: 'fewqfqew',
@@ -126,6 +130,6 @@ export const List: FC<Props> = ({ className, ...props }) => {
 					endAt: new Date().toString(),
 				}}
 			/>
-		</ul>
+		</div>
 	)
 }

@@ -15,7 +15,7 @@ export const MainSidebar: FC<Props> = ({ className, ...props }) => {
 		<aside
 			{...props}
 			className={cn(
-				'w-77 bg-theme-primary-bg px-7 py-8 h-screen scroll-hidden',
+				'shadow-primary w-77 bg-theme-primary-bg px-7 py-8 h-screen scroll-hidden z-2',
 				className
 			)}
 		>

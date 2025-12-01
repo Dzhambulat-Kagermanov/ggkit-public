@@ -8,10 +8,15 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const QuizScreen: FC<Props> = ({ className, ...props }) => {
 	return (
-		<main {...props} className={cn('grow w-min', className)}>
+		<main
+			{...props}
+			className={cn('grow w-min flex flex-col overflow-auto', className)}
+		>
 			<Filters />
-			<BreadCrumbs />
-			<List />
+			<div className='flex flex-col scroll-primary'>
+				<BreadCrumbs />
+				<List />
+			</div>
 		</main>
 	)
 }
