@@ -91,7 +91,9 @@ export const QuizCard: FC<Props> = ({
 					<h3 className='text-lg mt-5'>{description}</h3>
 					{status === EnQuizStatusesEntity.ACTIVE && votedValue === null ? (
 						<AccordionTrigger className='flex-0 mt-10 w-min p-0'>
-							<Button variant='default'>Проголосовать</Button>
+							<Button size='lg' variant='default'>
+								Проголосовать
+							</Button>
 						</AccordionTrigger>
 					) : null}
 				</div>

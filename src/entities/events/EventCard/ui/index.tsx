@@ -62,7 +62,7 @@ export const EventCard: FC<Props> = ({
 				</time>
 				<h2 className='text-lg font-medium mt-3 mb-5'>{name}</h2>
 				<p className='text-sm line-clamp-3'>{description}</p>
-				<Button variant='default' className='mt-10 w-full'>
+				<Button size='lg' variant='default' className='mt-10 w-full'>
 					Подробнее
 				</Button>
 			</div>
