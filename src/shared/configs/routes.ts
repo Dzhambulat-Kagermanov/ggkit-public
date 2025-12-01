@@ -1,57 +1,36 @@
+import { Routing } from '../helpers/Routing'
 import type {
+	EnCrudActionsEntity,
 	EnEventsSortTypesEntity,
 	EnEventsStatusesEntity,
 	EnEventsTypesEntity,
 	EnQuizSortTypesEntity,
 	EnQuizStatusesEntity,
 } from '../types/entities'
-import { concatQueryParams } from '../utils/concatQueryParams'
-
-type TDynamicParam = string | number
-type TQueryParams = Record<string, string | number>
-
-class Paths {
-	static getDynamicParamsPath(primaryPath: string) {
-		return (dynamicParam: TDynamicParam) => `${primaryPath}/${dynamicParam}`
-	}
-
-	static getQueryParamsPath<QueryParams extends TQueryParams>(
-		primaryPath: string
-	) {
-		return (queryParams?: QueryParams) =>
-			queryParams !== undefined
-				? `${primaryPath}${concatQueryParams(queryParams)}`
-				: primaryPath
-	}
-
-	static getFullPath<
-		DynamicParam extends TDynamicParam,
-		QueryParams extends TQueryParams
-	>(primaryPath: string) {
-		return <K extends QueryParams | undefined>(
-			dynamicParam: K extends undefined ? string : DynamicParam,
-			queryParams: K = undefined
-		) =>
-			queryParams !== undefined
-				? `${primaryPath}/${dynamicParam}${concatQueryParams(queryParams)}`
-				: `${primaryPath}/${dynamicParam}`
-	}
-}
 
 export const ROUTES = {
 	HOME: '/',
-	EVENTS: Paths.getQueryParamsPath<{
+	EVENTS: Routing.getQueryParamsPath<{
 		type?: EnEventsTypesEntity
 		status?: EnEventsStatusesEntity
 		sort?: EnEventsSortTypesEntity
 		search?: string
 	}>('/events'),
-	EVENT_BY_UUID: Paths.getQueryParamsPath('/events'),
-	QUIZ: Paths.getQueryParamsPath<{
+	EVENT_BY_UUID: Routing.getDynamicParamsPath('/events'),
+	QUIZ: Routing.getQueryParamsPath<{
 		search?: string
 		sort?: EnQuizSortTypesEntity
 		status?: EnQuizStatusesEntity
 	}>('/quiz'),
 	PROFILE_PERSONAL_INFO: '/profile/personal-info',
 	PROFILE_EVENTS: '/profile/events',
+
+	ADMIN_GROUPS: '/admin/groups',
+	ADMIN_GROUPS_USERS: Routing.getDynamicParamsPath('/admin/groups'),
+	ADMIN_EVENTS: Routing.getQueryParamsPath<{
+		action?: EnCrudActionsEntity
+	}>('/admin/events'),
+	ADMIN_QUIZ: Routing.getQueryParamsPath<{
+		action?: EnCrudActionsEntity
+	}>('/admin/quiz'),
 } as const

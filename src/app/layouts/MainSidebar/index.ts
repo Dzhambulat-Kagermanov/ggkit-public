@@ -1,1 +1,1 @@
-export { MainSidebar } from './ui'
+export { MainSidebarLayout } from './ui'

@@ -1,6 +1,6 @@
-import { ROUTES } from '@/shared/configs/routes'
-import { cn } from '@/shared/lib/cn'
-import { type FC } from 'react'
+import { cn } from '@/shared/utils/cn'
+import { type FC, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
 interface Props {
 	className?: string
@@ -9,6 +9,7 @@ interface Props {
 		size: 'small' | 'big'
 		node: ReactNode
 	}
+	children: ReactNode
 }
 
 export const LinkItem: FC<Props> = ({
@@ -20,9 +21,10 @@ export const LinkItem: FC<Props> = ({
 }) => {
 	return (
 		<Link
-			to={ROUTES.HOME}
+			{...props}
+			to={to}
 			className={cn(
-				'[&_svg]:h-auto flex gap-2 px-5 py-4 border-b border-b',
+				'[&_svg]:h-auto flex gap-2 px-5 py-4 border-b',
 				{
 					['[&_svg]:w-10']: size === 'big',
 					['[&_svg]:w-6']: size === 'small',

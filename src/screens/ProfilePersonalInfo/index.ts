@@ -1,0 +1,1 @@
+export { ProfilePersonalInfoScreen } from './ui'

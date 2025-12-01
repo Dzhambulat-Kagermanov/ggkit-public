@@ -1,7 +1,8 @@
 import { IMAGE_PATHS_CONFIG } from '@/shared/configs/image-paths'
 import { ROUTES } from '@/shared/configs/routes'
-import { cn } from '@/shared/lib/cn'
+import { cn } from '@/shared/utils/cn'
 import { type FC, type HTMLAttributes } from 'react'
+import { Link } from 'react-router-dom'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 

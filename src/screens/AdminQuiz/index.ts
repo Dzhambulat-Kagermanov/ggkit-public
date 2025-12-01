@@ -1,0 +1,1 @@
+export { AdminQuizScreen } from './ui'

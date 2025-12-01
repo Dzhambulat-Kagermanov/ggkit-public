@@ -1,0 +1,1 @@
+export { AdminGroupsScreen } from './ui'

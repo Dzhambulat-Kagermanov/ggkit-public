@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-export const MainSidebarLayout: FC<Props> = ({ className, ...props }) => {
+export const AdminSidebarLayout: FC<Props> = ({ className, ...props }) => {
 	return (
 		<div {...props} className={cn('', className)}>
 			<MainSidebar />

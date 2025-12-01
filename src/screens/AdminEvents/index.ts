@@ -1,0 +1,1 @@
+export { AdminEventsScreen } from './ui'
