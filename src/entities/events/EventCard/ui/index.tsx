@@ -56,7 +56,7 @@ export const EventCard: FC<Props> = ({
 				/>
 			</div>
 			<div className='p-5'>
-				<time>
+				<time className='text-sm'>
 					Время проведения: {formatTime(startDatetime)} -{' '}
 					{formatTime(finishDatetime)}
 				</time>
