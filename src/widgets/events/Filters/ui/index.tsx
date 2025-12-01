@@ -52,7 +52,7 @@ export const Filters: FC<Props> = ({ className, ...props }) => {
 					</SelectContent>
 				</Select>
 			</div>
-			<div className='flex-1'>
+			<div className='flex-1 overflow-hidden'>
 				<Label htmlFor='sort' className='text-base font-montserrat'>
 					Сортировка
 				</Label>
@@ -64,7 +64,7 @@ export const Filters: FC<Props> = ({ className, ...props }) => {
 						<SelectItem value={EnEventsSortTypesEntity.DATE_PUBLISH_ASC}>
 							По возрастанию по дате публикации
 						</SelectItem>
-						<SelectItem value={EnEventsSortTypesEntity.DATE_PUBLISH_ASC}>
+						<SelectItem value={EnEventsSortTypesEntity.DATE_PUBLISH_DESC}>
 							По убыванию по дате публикации
 						</SelectItem>
 					</SelectContent>
