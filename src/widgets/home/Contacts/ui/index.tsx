@@ -8,7 +8,10 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const Contacts: FC<Props> = ({ className, ...props }) => {
 	return (
-		<section {...props} className={cn('paddings-x-sections py-25', className)}>
+		<section
+			{...props}
+			className={cn('paddings-x-sections pt-25 pb-16', className)}
+		>
 			<h2 className='text-4xl font-medium mb-9'>Контактные данные</h2>
 			<div className='flex justify-between items-start'>
 				<nav className=''>

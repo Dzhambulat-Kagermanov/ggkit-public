@@ -6,6 +6,7 @@ import { CalendarDays, CircleUser, Star, ThumbsUp } from 'lucide-react'
 import { type FC, type HTMLAttributes } from 'react'
 import { Link } from 'react-router-dom'
 import { LinkItem } from './LinkItem'
+import { LoginModal } from './LoginModal'
 import { ThemeSwitcher } from './ThemeSwticher'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
@@ -28,14 +29,17 @@ export const MainSidebar: FC<Props> = ({ className, ...props }) => {
 			</Link>
 
 			<nav className='mt-12'>
-				<LinkItem
-					children='Войти'
-					icon={{
-						node: <CircleUser color='currentColor' />,
-						size: 'big',
-					}}
-					to={ROUTES.PROFILE_PERSONAL_INFO}
-				/>
+				<LoginModal>
+					<LinkItem
+						isForceRedirect
+						children='Войти'
+						icon={{
+							node: <CircleUser color='currentColor' />,
+							size: 'big',
+						}}
+						to={ROUTES.PROFILE_PERSONAL_INFO}
+					/>
+				</LoginModal>
 				<div className='mt-13'>
 					<LinkItem
 						children='О нас'
