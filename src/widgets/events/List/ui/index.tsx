@@ -21,7 +21,7 @@ export const List: FC<Props> = ({ className, ...props }) => {
 				data={{
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
-					name: 'Какое блюдо добавить в меню в столовой?',
+					name: 'Очень важное мероприятие',
 					status: EnEventsStatusesEntity.FINISHED,
 					uuid: 'fewqfqew',
 					startDatetime:
@@ -36,7 +36,7 @@ export const List: FC<Props> = ({ className, ...props }) => {
 				data={{
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
-					name: 'Какое блюдо добавить в меню в столовой?',
+					name: 'Очень важное мероприятие',
 					status: EnEventsStatusesEntity.RECRUITING,
 					uuid: 'fewqfqew',
 					startDatetime:
@@ -51,7 +51,7 @@ export const List: FC<Props> = ({ className, ...props }) => {
 				data={{
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
-					name: 'Какое блюдо добавить в меню в столовой?',
+					name: 'Очень важное мероприятие',
 					status: EnEventsStatusesEntity.STARTED,
 					uuid: 'fewqfqew',
 					startDatetime:
