@@ -2,6 +2,8 @@ import type {
 	EnEventsSortTypesEntity,
 	EnEventsStatusesEntity,
 	EnEventsTypesEntity,
+	EnQuizSortTypesEntity,
+	EnQuizStatusesEntity,
 } from '../types/entities'
 import { concatQueryParams } from '../utils/concatQueryParams'
 
@@ -44,5 +46,12 @@ export const ROUTES = {
 		sort?: EnEventsSortTypesEntity
 		search?: string
 	}>('/events'),
-	ATM: Paths.getDynamicParamsPath('/atm'),
+	EVENT_BY_UUID: Paths.getQueryParamsPath('/events'),
+	QUIZ: Paths.getQueryParamsPath<{
+		search?: string
+		sort?: EnQuizSortTypesEntity
+		status?: EnQuizStatusesEntity
+	}>('/quiz'),
+	PROFILE_PERSONAL_INFO: '/profile/personal-info',
+	PROFILE_EVENTS: '/profile/events',
 } as const
