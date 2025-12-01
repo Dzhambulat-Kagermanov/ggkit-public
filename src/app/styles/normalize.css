@@ -9,8 +9,8 @@
 		--theme-primary-bg: #0f172a;
 		--theme-secondary-bg: #171e2d;
 		--theme-active-badge: #2ea84f;
-		--theme-passive-badge: #7a4dff;
-		--theme-intermediate-badge: #d93a3a;
+		--theme-passive-badge: #d93a3a;
+		--theme-intermediate-badge: #7a4dff;
 		--theme-border: #334155;
 	}
 	:root[data-theme='light'] {
@@ -23,8 +23,8 @@
 		--theme-primary-bg: #fff;
 		--theme-secondary-bg: #f5f5f5;
 		--theme-active-badge: #b9ffcc;
-		--theme-passive-badge: #e7d7ff;
-		--theme-intermediate-badge: #ffdede;
+		--theme-passive-badge: #ffdede;
+		--theme-intermediate-badge: #e7d7ff;
 		--theme-border: #c3d9e4;
 	}
 	:root {

@@ -9,7 +9,10 @@ export const List: FC<Props> = ({ className, ...props }) => {
 	return (
 		<ul
 			{...props}
-			className={cn('grid grid-cols-3 gap-12 auto-rows-max', className)}
+			className={cn(
+				'grid grid-cols-3 gap-12 auto-rows-max paddings-x-sections',
+				className
+			)}
 		>
 			<QuizCard
 				data={{
