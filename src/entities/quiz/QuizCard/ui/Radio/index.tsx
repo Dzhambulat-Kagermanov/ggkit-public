@@ -11,7 +11,7 @@ export const Radio: FC<Props> = ({ className, value, children, ...props }) => {
 	return (
 		<div
 			{...props}
-			className={cn('flex gap-x-2 items-center min-h-6', className)}
+			className={cn('flex gap-x-2 items-center min-h-10', className)}
 		>
 			<RadioGroupItem id={`radio-${value}`} value={value} />
 			<Label className='text-lg' htmlFor={`radio-${value}`}>
