@@ -35,7 +35,9 @@ export const ThemeSwitcher: FC<Props> = ({ className, ...props }) => {
 			<button
 				type='button'
 				onClick={() => {
-					setTheme(EnThemesEntity.DARK)
+					if (theme === EnThemesEntity.DARK) {
+						setTheme(EnThemesEntity.LIGHT)
+					} else setTheme(EnThemesEntity.DARK)
 				}}
 				className={cn(btnCls, {
 					[activeCls]: theme === EnThemesEntity.DARK,
@@ -46,7 +48,9 @@ export const ThemeSwitcher: FC<Props> = ({ className, ...props }) => {
 			<button
 				type='button'
 				onClick={() => {
-					setTheme(EnThemesEntity.LIGHT)
+					if (theme === EnThemesEntity.LIGHT) {
+						setTheme(EnThemesEntity.DARK)
+					} else setTheme(EnThemesEntity.LIGHT)
 				}}
 				className={cn(btnCls, {
 					[activeCls]: theme === EnThemesEntity.LIGHT,
