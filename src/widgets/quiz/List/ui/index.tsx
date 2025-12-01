@@ -10,7 +10,7 @@ export const List: FC<Props> = ({ className, ...props }) => {
 		<div
 			{...props}
 			className={cn(
-				'grid grid-cols-2 gap-12 auto-rows-max paddings-x-sections grow',
+				'grid grid-cols-2 gap-12 items-start auto-rows-max paddings-x-sections grow pb-10',
 				className
 			)}
 		>
