@@ -16,7 +16,8 @@ export const List: FC<Props> = ({ className, ...props }) => {
 		>
 			<QuizCard
 				data={{
-					createdAt: new Date().toString(),
+					createdAt:
+						'Mon Dec 01 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
 					name: 'Какое блюдо добавить в меню в столовой?',
@@ -41,12 +42,14 @@ export const List: FC<Props> = ({ className, ...props }) => {
 						},
 					],
 					votedValue: 'fewqfew',
-					endAt: new Date().toString(),
+					endAt:
+						'Mon Dec 02 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 				}}
 			/>
 			<QuizCard
 				data={{
-					createdAt: new Date().toString(),
+					createdAt:
+						'Mon Dec 01 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
 					name: 'Какую блюдо добавить в меню в столовой?',
@@ -70,12 +73,14 @@ export const List: FC<Props> = ({ className, ...props }) => {
 							value: 'fewqfew',
 						},
 					],
-					endAt: new Date().toString(),
+					endAt:
+						'Mon Dec 02 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 				}}
 			/>
 			<QuizCard
 				data={{
-					createdAt: new Date().toString(),
+					createdAt:
+						'Mon Dec 01 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
 					name: 'Какую блюдо добавить в меню в столовой?',
@@ -103,7 +108,8 @@ export const List: FC<Props> = ({ className, ...props }) => {
 			/>
 			<QuizCard
 				data={{
-					createdAt: new Date().toString(),
+					createdAt:
+						'Mon Dec 01 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 					description:
 						'Lorem ipsum dolor sit das dasdsadsa amet, consectetur adipiscing elit. Pellentesque eget maximus dasds nulla. Cras volutpat massa at aliquet aliquam. Sed scelerisque rutrum ornare. das Sed leo sem, tristique ac tortor sit amet, commodo iaculis lectus. Pr',
 					name: 'Какую блюдо добавить в меню в столовой?',
@@ -127,7 +133,8 @@ export const List: FC<Props> = ({ className, ...props }) => {
 							value: 'fewqfew',
 						},
 					],
-					endAt: new Date().toString(),
+					endAt:
+						'Mon Dec 02 2025 12:03:07 GMT+0300 (Москва, стандартное время)',
 				}}
 			/>
 		</div>

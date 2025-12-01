@@ -7,13 +7,13 @@ import {
 } from '@/shared/ui-kit/accordion'
 import { Badge } from '@/shared/ui-kit/badge'
 import { Button } from '@/shared/ui-kit/button'
-import { Label } from '@/shared/ui-kit/label'
-import { RadioGroupItem } from '@/shared/ui-kit/radio-group'
+import { UiTimer } from '@/shared/ui-kit/Timer'
 import { cn } from '@/shared/utils/cn'
 import { plural } from '@/shared/utils/plural'
 import { RadioGroup } from '@radix-ui/react-radio-group'
 import { useState, type FC, type HTMLAttributes } from 'react'
 import type { TData } from '../model/Data'
+import { formatTime } from '../utils/formatTime'
 import { Radio } from './Radio'
 import { VotedRadio } from './VotedRadio'
 
@@ -61,7 +61,18 @@ export const QuizCard: FC<Props> = ({
 				<div className='px-10 pb-12 pt-5'>
 					<div className='flex justify-end gap-x-2 w-full'>
 						{endAt !== undefined ? (
-							<Badge variant='default'>7 дней 24:33:59</Badge>
+							<Badge variant='default'>
+								<span className='min-w-10'>
+									<UiTimer
+										formatFunc={formatTime}
+										isReverse={true}
+										startSeconds={
+											Math.floor(new Date(endAt).getTime() / 1000) -
+											Math.floor(new Date(createdAt).getTime() / 1000)
+										}
+									/>
+								</span>
+							</Badge>
 						) : null}
 						<Badge variant='info'>
 							{totalVotes} {plural(totalVotes, ['голос', 'голоса', 'голосов'])}
