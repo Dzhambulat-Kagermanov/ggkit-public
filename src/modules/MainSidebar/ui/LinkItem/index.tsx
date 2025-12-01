@@ -20,7 +20,7 @@ const mainCls = (
 	className?: string
 ) =>
 	cn(
-		'[&_svg]:h-auto flex items-center text-xl gap-3 px-5 py-4 border-b border-b-theme-border hover:bg-secondary duration-150 w-full',
+		'[&_svg]:h-auto flex items-center text-xl gap-3 px-5 py-4 hover:bg-secondary duration-150 w-full rounded-sm relative before:absolute before:w-[96%] before:left-1/2 before:-translate-x-1/2 before:bottom-0 before:h-[1px] before:bg-theme-border',
 		{
 			['[&_svg]:w-10']: size === 'big',
 			['[&_svg]:w-6']: size === 'small',
