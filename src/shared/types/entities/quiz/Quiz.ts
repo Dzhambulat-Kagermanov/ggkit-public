@@ -6,11 +6,12 @@ export type TQuizQuizEntity = {
 	name: string
 	description: string
 	totalVotes: number
-	endDateTime?: string // Timestamp
 	votedValue?: string
 	variants: {
 		value: string
 		renderText: string
 		currentVotes: number
 	}[]
+	endAt?: string // Timestamp
+	createdAt: string // Timestamp
 }
