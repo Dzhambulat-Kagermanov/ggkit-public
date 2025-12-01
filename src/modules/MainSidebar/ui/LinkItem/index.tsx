@@ -24,7 +24,7 @@ export const LinkItem: FC<Props> = ({
 			{...props}
 			to={to}
 			className={cn(
-				'[&_svg]:h-auto flex gap-2 px-5 py-4 border-b',
+				'[&_svg]:h-auto flex items-center text-xl gap-3 px-5 py-4 border-b border-b-theme-border hover:bg-secondary duration-150',
 				{
 					['[&_svg]:w-10']: size === 'big',
 					['[&_svg]:w-6']: size === 'small',
